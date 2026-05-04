@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <!-- Phan Dau -->
+    <head>
+        <title>Chon Nhan Vat</title>
+
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+
+    <!--Phan Than -->
+    <body>
+        <h1>Chon Nhan Vat</h1>
+    <input type="text" id="NameInput" placeholder="Nhap ten nhan vat: lam , thuc , nam , bao,...">
+    <button onclick="goNext()">Next</button>
+
+    <!--Phan Than-->
+    <script>
+        function goNext() {
+            let name = document.getElementById("NameInput").value.toLowerCase();
+
+            if (name === "lam") {
+                window.location.href = "lam.html";
+            } else if (name === "thuc") {
+                window.location.href = "thuc.html";
+            } else if (name === "nam") {
+                window.location.href = "nam.html";
+            } else if (name === "bao") {
+                window.location.href = "Bao.html";
+            } else if (name === "phat") {
+                window.location.href = "Phat.html";
+            }else {
+                alert("Nhap sai ten nhan vat, vui long nhap lai!");
+
+
+            }
+        
+            }
+        
+    </script>
+    </body>
+</html>
